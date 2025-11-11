@@ -10,18 +10,16 @@ from sklearn.covariance import EmpiricalCovariance
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import IsolationForest
-from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 import numpy as np
-from sklearn.mixture import GaussianMixture
 import plotly.graph_objects as go
 import streamlit as st
 
 # Load the CSV file into a DataFrame
-file_path = 'D:/Sasmitha/sem 5/hr lab/proj/projdata.csv'
+file_path = 'D:/Hansa/sem 5/hr lab/proj/projdata.csv'
 df = pd.read_csv(file_path)
 
 # Check for null values in the DataFrame
@@ -231,5 +229,6 @@ elif visualization_option == "Gaussian Mixture Model Clusters":
     plt.legend()
     plt.show()
     st.pyplot(plt)
+
 
 
