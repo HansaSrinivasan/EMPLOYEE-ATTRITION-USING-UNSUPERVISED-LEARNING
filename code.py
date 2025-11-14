@@ -4,9 +4,6 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.mixture import GaussianMixture
-from sklearn.neighbors import KernelDensity
-from sklearn.neural_network import BernoulliRBM
-from sklearn.covariance import EmpiricalCovariance
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import IsolationForest
@@ -229,6 +226,7 @@ elif visualization_option == "Gaussian Mixture Model Clusters":
     plt.legend()
     plt.show()
     st.pyplot(plt)
+
 
 
 
